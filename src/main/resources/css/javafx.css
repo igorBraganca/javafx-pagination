@@ -1,0 +1,3 @@
+.pagination {
+    -fx-skin: "br.com.icb.javafx.pagination.skin.CustomPaginationSkin";
+}
