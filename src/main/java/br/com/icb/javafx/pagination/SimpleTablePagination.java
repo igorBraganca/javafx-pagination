@@ -2,6 +2,7 @@ package br.com.icb.javafx.pagination;
 
 import java.time.LocalDate;
 
+import br.com.icb.javafx.cell.factory.SimplePropertyValueFactory;
 import javafx.application.Application;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -56,9 +57,9 @@ public class SimpleTablePagination extends Application {
 		tabela.getColumns().add(idade);
 
 		nome.setCellValueFactory(new PropertyValueFactory<>("nome"));
-		genero.setCellValueFactory(new PropertyValueFactory<>("genero"));
+		genero.setCellValueFactory(new SimplePropertyValueFactory<>("genero"));
 		dataNascimento.setCellValueFactory(new PropertyValueFactory<>("dataNascimento"));
-		idade.setCellValueFactory(new PropertyValueFactory<>("idade"));
+		idade.setCellValueFactory(new SimplePropertyValueFactory<>("idade"));
 
 		tabela.setItems(itensTabela);
 	}
@@ -71,8 +72,6 @@ public class SimpleTablePagination extends Application {
 		pane.getChildren().add(pagination);
 
 		Scene scene = new Scene(pane);
-		
-		scene.getStylesheets().add("/css/javafx.css");
 		
 		primaryStage.setScene(scene);
 
