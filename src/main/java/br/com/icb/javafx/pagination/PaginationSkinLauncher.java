@@ -2,7 +2,7 @@ package br.com.icb.javafx.pagination;
 
 import javafx.stage.Stage;
 
-public class SkynPagination extends SimpleTablePagination {
+public class PaginationSkinLauncher extends SimpleTablePagination {
 
 	@Override
 	public void start(Stage primaryStage) throws Exception {

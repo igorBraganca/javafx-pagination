@@ -21,9 +21,9 @@
      * -fx-text-fill value for text painted on top of backgrounds colored
      * with -fx-control-inner-background.
      */
-    -fx-control-inner-background: derive(-fx-base,80.0%);
+    -fx-control-inner-background: derive(-fx-base,80%);
     /* Version of -fx-control-inner-background for alternative rows */
-    -fx-control-inner-background-alt: derive(-fx-control-inner-background,-2.0%);
+    -fx-control-inner-background-alt: derive(-fx-control-inner-background,-2%);
 
     /* One of these colors will be chosen based upon a ladder calculation
      * that uses the brightness of a background color.  Instead of using these
@@ -105,9 +105,9 @@
      */
     -fx-hover-base: ladder(
         -fx-base,
-        derive(-fx-base,20.0%) 20.0%,
-        derive(-fx-base,30.0%) 35.0%,
-        derive(-fx-base,40.0%) 50.0%
+        derive(-fx-base,20%) 20%,
+        derive(-fx-base,30%) 35%,
+        derive(-fx-base,40%) 50%
      );
 
     /* A little darker than -fx-base and used as the -fx-color for the
@@ -115,17 +115,17 @@
      *
      * TODO: should this be renamed to -fx-armed-base?
      */
-    -fx-pressed-base: derive(-fx-base,-6.0%);
+    -fx-pressed-base: derive(-fx-base,-6%);
 
     /* The color to use for -fx-text-fill when text is to be painted on top of
      * a background filled with the -fx-background color.
      */
     -fx-text-background-color: ladder(
         -fx-background,
-        -fx-light-text-color 45.0%,
-        -fx-dark-text-color  46.0%,
-        -fx-dark-text-color  59.0%,
-        -fx-mid-text-color   60.0%
+        -fx-light-text-color 45%,
+        -fx-dark-text-color  46%,
+        -fx-dark-text-color  59%,
+        -fx-mid-text-color   60%
     );
 
     /* A little darker than -fx-color and used to draw boxes around objects such
@@ -133,8 +133,8 @@
      */
     -fx-box-border: ladder(
         -fx-color,
-        black 20.0%,
-        derive(-fx-color,-15.0%) 30.0%
+        black 20%,
+        derive(-fx-color,-15%) 30%
     );
 
     /* Darker than -fx-background and used to draw boxes around text boxes and
@@ -142,8 +142,8 @@
      */
     -fx-text-box-border: ladder(
         -fx-background,
-        black 10.0%,
-        derive(-fx-background, -15.0%) 30.0%
+        black 10%,
+        derive(-fx-background, -15%) 30%
     );
 
     /* Lighter than -fx-background and used to provide a small highlight when
@@ -152,11 +152,11 @@
      */
     -fx-shadow-highlight-color: ladder(
         -fx-background,
-        rgba(255.0,255.0,255.0,0.07) 0.0%,
-        rgba(255.0,255.0,255.0,0.07) 20.0%,
-        rgba(255.0,255.0,255.0,0.07) 70.0%,
-        rgba(255.0,255.0,255.0,0.7) 90.0%,
-        rgba(255.0,255.0,255.0,0.75) 100.0%
+        rgba(255,255,255,0.07) 0%,
+        rgba(255,255,255,0.07) 20%,
+        rgba(255,255,255,0.07) 70%,
+        rgba(255,255,255,0.7) 90%,
+        rgba(255,255,255,0.75) 100%
       );
 
     /* A gradient that goes from a little darker than -fx-color on the top to
@@ -165,7 +165,7 @@
      * a control. It is typically the same size as the control (i.e., insets
      * are 0).
      */
-    -fx-outer-border: derive(-fx-color,-23.0%);
+    -fx-outer-border: derive(-fx-color,-23%);
 
     /* A gradient that goes from a bit lighter than -fx-color on the top to
      * a little darker at the bottom.  Typically is the third color in the
@@ -175,23 +175,23 @@
     -fx-inner-border: linear-gradient(to bottom,
                 ladder(
                     -fx-color,
-                    derive(-fx-color,30.0%) 0.0%,
-                    derive(-fx-color,20.0%) 40.0%,
-                    derive(-fx-color,25.0%) 60.0%,
-                    derive(-fx-color,55.0%) 80.0%,
-                    derive(-fx-color,55.0%) 90.0%,
-                    derive(-fx-color,75.0%) 100.0%
+                    derive(-fx-color,30%) 0%,
+                    derive(-fx-color,20%) 40%,
+                    derive(-fx-color,25%) 60%,
+                    derive(-fx-color,55%) 80%,
+                    derive(-fx-color,55%) 90%,
+                    derive(-fx-color,75%) 100%
                 ),
                 ladder(
                     -fx-color,
-                    derive(-fx-color,20.0%) 0.0%,
-                    derive(-fx-color,10.0%) 20.0%,
-                    derive(-fx-color,5.0%) 40.0%,
-                    derive(-fx-color,-2.0%) 60.0%,
-                    derive(-fx-color,-5.0%) 100.0%
+                    derive(-fx-color,20%) 0%,
+                    derive(-fx-color,10%) 20%,
+                    derive(-fx-color,5%) 40%,
+                    derive(-fx-color,-2%) 60%,
+                    derive(-fx-color,-5%) 100%
                 ));
-    -fx-inner-border-horizontal: linear-gradient(to right, derive(-fx-color,55.0%), derive(-fx-color,-5.0%));
-    -fx-inner-border-bottomup: linear-gradient(to top, derive(-fx-color,55.0%), derive(-fx-color,-5.0%));
+    -fx-inner-border-horizontal: linear-gradient(to right, derive(-fx-color,55%), derive(-fx-color,-5%));
+    -fx-inner-border-bottomup: linear-gradient(to top, derive(-fx-color,55%), derive(-fx-color,-5%));
 
     /* A gradient that goes from a little lighter than -fx-color at the top to
      * a little darker than -fx-color at the bottom and is used to fill the
@@ -200,22 +200,22 @@
     -fx-body-color: linear-gradient(to bottom,
             ladder(
                 -fx-color,
-                derive(-fx-color,8.0%) 75.0%,
-                derive(-fx-color,10.0%) 80.0%
+                derive(-fx-color,8%) 75%,
+                derive(-fx-color,10%) 80%
             ),
-            derive(-fx-color,-8.0%));
-    -fx-body-color-bottomup: linear-gradient(to top, derive(-fx-color,10.0%) ,derive(-fx-color,-6.0%));
-    -fx-body-color-to-right: linear-gradient(to right, derive(-fx-color,10.0%) ,derive(-fx-color,-6.0%));
+            derive(-fx-color,-8%));
+    -fx-body-color-bottomup: linear-gradient(to top, derive(-fx-color,10%) ,derive(-fx-color,-6%));
+    -fx-body-color-to-right: linear-gradient(to right, derive(-fx-color,10%) ,derive(-fx-color,-6%));
 
     /* The color to use as -fx-text-fill when painting text on top of
      * backgrounds filled with -fx-base, -fx-color, and -fx-body-color.
      */
     -fx-text-base-color: ladder(
         -fx-color,
-        -fx-light-text-color 45.0%,
-        -fx-dark-text-color  46.0%,
-        -fx-dark-text-color  59.0%,
-        -fx-mid-text-color   60.0%
+        -fx-light-text-color 45%,
+        -fx-dark-text-color  46%,
+        -fx-dark-text-color  59%,
+        -fx-mid-text-color   60%
     );
 
     /* The color to use as -fx-text-fill when painting text on top of
@@ -223,10 +223,10 @@
      */
     -fx-text-inner-color: ladder(
         -fx-control-inner-background,
-        -fx-light-text-color 45.0%,
-        -fx-dark-text-color  46.0%,
-        -fx-dark-text-color  59.0%,
-        -fx-mid-text-color   60.0%
+        -fx-light-text-color 45%,
+        -fx-dark-text-color  46%,
+        -fx-dark-text-color  59%,
+        -fx-mid-text-color   60%
     );
 
     /* The color to use for small mark-like objects such as checks on check
@@ -234,16 +234,16 @@
      */
     -fx-mark-color: ladder(
         -fx-color,
-        white 30.0%,
-        derive(-fx-color,-63.0%) 31.0%
+        white 30%,
+        derive(-fx-color,-63%) 31%
     );
 
     /* The small thin light "shadow" for mark-like objects. Typically used in
      * conjunction with -fx-mark-color with an insets of 1 0 -1 0. */
     -fx-mark-highlight-color: ladder(
         -fx-color,
-        derive(-fx-color,80.0%) 60.0%,
-        white 70.0%
+        derive(-fx-color,80%) 60%,
+        white 70%
     );
 
     /* Background for items in list like things such as menus, lists, trees,
@@ -271,7 +271,7 @@
     -fx-cell-hover-color: #cce3f4;
 
     /** Focus line for keyboard focus traversal on cell based controls */
-    -fx-cell-focus-inner-border: derive(-fx-selection-bar,30.0%);
+    -fx-cell-focus-inner-border: derive(-fx-selection-bar,30%);
 
     /* The colors to use in Pagination */
     -fx-page-bullet-border: #acacac;
@@ -279,10 +279,10 @@
 
     -fx-focused-text-base-color : ladder(
         -fx-selection-bar,
-        -fx-light-text-color 45.0%,
-        -fx-dark-text-color 46.0%,
-        -fx-dark-text-color 59.0%,
-        -fx-mid-text-color 60.0%
+        -fx-light-text-color 45%,
+        -fx-dark-text-color 46%,
+        -fx-dark-text-color 59%,
+        -fx-mid-text-color 60%
     );
     -fx-focused-mark-color : -fx-focused-text-base-color ;
 
@@ -295,25 +295,57 @@
     -fx-background-color: -fx-background;
 }
 
-
-.blabla .control-box {
-	-fx-padding: 5.0px 0.0 0.0 0.0;
-	-fx-spacing: 2.0px;
+.pagination {
+	
 }
 
-.blabla .right-arrow-button, .left-arrow-button {
+.pagination > .page {
+	
+}
+
+.pagination > .pagination-control {
+	-fx-fill-height: false;
+	-fx-alignment: top-center;
+	
+}
+
+.my-pagination > .pagination-control > .control-box > .right-arrow-button,
+.my-pagination > .pagination-control > .control-box > .left-arrow-button {
 	-fx-background-color: -fx-shadow-highlight-color, -fx-outer-border, -fx-inner-border, -fx-body-color;
-    -fx-background-insets: 0.0, 0.0, 0.0, 0.0;
+    -fx-background-insets: 0px, 0px, 0px, 0px;
     -fx-border-color: -fx-outer-border;
     
     -fx-padding: 0.0px;
 }
 
-.button-default {
-	-fx-background-color: -fx-shadow-highlight-color, -fx-outer-border, -fx-inner-border, -fx-body-color;
-    -fx-background-insets: 0.0, 0.0, 0.0, 0.0;
-    -fx-border-color: -fx-outer-border;
-    -fx-padding: 0em 0.333em 0em 0.33em;
+.pagination > .pagination-control > .control-box > .my-first-button,
+.pagination > .pagination-control > .control-box > .my-last-button,
+.pagination > .pagination-control > .control-box > .my-left-button,
+.pagination > .pagination-control > .control-box > .my-right-button {
+    -fx-background-radius: 0;
     
     -fx-text-fill: -fx-text-base-color;
+
+    -fx-min-height: 22px;
+    -fx-pref-height: 22px;
+    -fx-max-height: 22px;
+}
+
+.pagination > .pagination-control > .control-box > .my-last-button {
+	-fx-background-radius: 0 3 3 0, 0 3 3 0, 0 2 2 0, 0 1 1 0;
+	-fx-background-insets: 0 5 -1 0, 0 5 0 0, 1 6 1 1, 2 7 2 2;
+	-fx-padding: 0em 0.75em 0em 0.417em;
+}
+.pagination > .pagination-control > .control-box > .my-first-button {
+	-fx-background-radius: 3 0 0 3, 3 0 0 3, 2 0 0 2, 1 0 0 1;
+    -fx-background-insets: 0 0 -1 5, 0 0 0 5, 1 1 1 6, 2 2 2 7;
+    -fx-padding: 0em 0.417em 0em 0.75em;
+}
+
+.pagination > .pagination-control > .control-box > .my-left-button > .left-image {
+	-fx-image: url("../imagens/voltar.png");
+}
+
+.pagination > .pagination-control > .control-box > .my-right-button > .right-image {
+	-fx-image: url("../imagens/avancar.png");
 }

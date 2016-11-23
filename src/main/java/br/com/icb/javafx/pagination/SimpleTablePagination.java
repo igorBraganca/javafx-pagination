@@ -3,6 +3,7 @@ package br.com.icb.javafx.pagination;
 import java.time.LocalDate;
 
 import br.com.icb.javafx.cell.factory.SimplePropertyValueFactory;
+import br.com.icb.javafx.scene.control.skin.PaginationSkin;
 import javafx.application.Application;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -41,6 +42,8 @@ public class SimpleTablePagination extends Application {
 
 	@Override
 	public void init() throws Exception {
+		pagination.setSkin(new PaginationSkin(pagination));
+		
 		pagination = new Pagination(29);
 		pagination.setPageFactory((pageIndex) -> changePage(pageIndex));
 
